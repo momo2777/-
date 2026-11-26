@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="拾词：每天录入几个单词，按日背诵、练习和打卡，也可以挑选多天做汇总练习。">
+  <meta name="theme-color" content="#f4f0e6">
+  <meta name="color-scheme" content="light">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="拾词">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>拾词 · 每日单词打卡</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <main id="app" class="app-main"></main>
+    <nav id="bottom-nav" class="bottom-nav" aria-label="主导航"></nav>
+    <div id="screen-root"></div>
+    <div id="confirm-root"></div>
+    <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="false"></div>
+  </div>
+  <noscript>
+    <div class="noscript">拾词需要启用 JavaScript 才能使用，请在浏览器设置中开启后刷新页面。</div>
+  </noscript>
+  <script src="js/util.js" defer></script>
+  <script src="js/parser.js" defer></script>
+  <script src="js/store.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
